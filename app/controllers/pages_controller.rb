@@ -1,10 +1,16 @@
 class PagesController < ApplicationController
-  def welcome
+  def landing
+  end
+
+  def thanks
   end
 
   def about
   end
 
-  def thanks
+  def privacy
+  end
+
+  def terms
   end
 end

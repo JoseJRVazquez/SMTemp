@@ -1,8 +1,13 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionController::TestCase
-  test "should get welcome" do
-    get :welcome
+  test "should get landing" do
+    get :landing
+    assert_response :success
+  end
+
+  test "should get thanks" do
+    get :thanks
     assert_response :success
   end
 
@@ -11,8 +16,13 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get thanks" do
-    get :thanks
+  test "should get privacy" do
+    get :privacy
+    assert_response :success
+  end
+
+  test "should get terms" do
+    get :terms
     assert_response :success
   end
 

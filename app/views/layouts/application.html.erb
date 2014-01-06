@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sm1</title>
+  <title>ScholarMama</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="container">
+<div class="page-header">	
+	  
+	  <ul class="nav nav-pills pull-right">
+			    <li>
+			    	<%= link_to "Facebook" , "https://www.facebook.com/pages/Scholarmamacom/541347562627998", :target => "_blank" %>
+			    </li>
+			    <li>
+			    	<%= link_to "Twitter" , "http://www.twitter.com/TheScholarMama", :target => "_blank" %>
+			    </li>
+			    <li>
+			    	<%= link_to "Instagram" , "http://www.instagram.com/thescholarmama", :target => "_blank" %>
+			    </li>
+			    <li>
+			    	<%= link_to "GPlus" , "https://plus.google.com/u/0/104076976256483636178/posts", :target => "_blank" %>
+			    </li>
+				<li>
+			    	<%= link_to "YouTube" , "https://www.youtube.com/channel/UCZtXHz4cN1OaNy653dwLFqg", :target => "_blank" %>
+			    </li>
 
-<%= yield %>
+			    <li>
+    <%= link_to "https://www.facebook.com/pages/Scholarmamacom/541347562627998", :target => "_blank" do %>
+      <%= image_tag 'facebook-5.png' %>
+    <% end %>
+</li>
+<li>
+    <%= link_to "http://www.twitter.com/TheScholarMama", :target => "_blank" do %>
+      <%= image_tag 'twitter-5.png' %>
+    <% end %>
+</li>
+			</ul>
 
+			<h1><%= link_to "ScholarMama", '/'%></h1>
+
+			</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+<%= yield %>	
+	</div>
+</div>
+
+ <!-- Footer
+    ================================================== -->
+    <footer class="bs-footer" role="contentinfo">
+      <div class="container">
+  <ul class="nav nav-pills pull-left">
+  	<li>
+<%= link_to "Privacy" , "/pages/privacy", :target => "_blank" %>
+	</li>
+	<li>
+<%= link_to "Terms of Use" , "/pages/terms", :target => "_blank" %>
+	</li>
+		<li>
+<%= link_to "About" , "/pages/about" %>
+	</li>
+  </ul>
+</div>
+   <p>Designed and built by <a href="https://twitter.com/thejosevazquez" target="_blank">@TheJoseVazquez</a></p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    </div>
+      </div>
+</footer>
 </body>
 </html>

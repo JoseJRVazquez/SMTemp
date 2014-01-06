@@ -1,4 +1,7 @@
 Sm1::Application.routes.draw do
+  get "pages/landing"
+  get "pages/privacy"
+  get "pages/terms"
   get "pages/welcome"
   get "pages/about"
   get "pages/thanks"
