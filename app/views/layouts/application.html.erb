@@ -10,9 +10,13 @@
 </head>
 <body>
 <div class="container">
-<div class="page-header">	
-	  
-	  <ul class="nav nav-pills pull-right">
+<div class="page-header">
+<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron well">
+
+				
+<ul class="nav nav-pills pull-right">
 			    <li>
     <%= link_to "https://www.facebook.com/pages/Scholarmamacom/541347562627998", :target => "_blank" do %>
       <%= image_tag 'facebook-5.png' %>
@@ -34,9 +38,12 @@
     <% end %>
 </li>
 			</ul>
+<h1><%= link_to "ScholarMama", '/'%></h1>
+	  
 
-			<h1><%= link_to "ScholarMama", '/'%></h1>
 
+		</div>
+	</div>
 			</div>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -48,7 +55,13 @@
     ================================================== -->
     <footer class="bs-footer" role="contentinfo">
       <div class="container">
-  <ul class="nav nav-pills pull-left">
+      		  
+</div>
+   <p>Designed and built by <a href="https://twitter.com/thejosevazquez" target="_blank">@TheJoseVazquez</a></p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+    <p>Currently v.0.1.1</p>
+
+    	 <ul class="nav nav-pills pull-left">
   	<li>
 <%= link_to "Privacy" , "/pages/privacy", :target => "_blank" %>
 	</li>
@@ -59,10 +72,6 @@
 <%= link_to "About" , "/pages/about" %>
 	</li>
   </ul>
-</div>
-   <p>Designed and built by <a href="https://twitter.com/thejosevazquez" target="_blank">@TheJoseVazquez</a></p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-    <p>Currently v.0.1.1
     </div>
       </div>
 </footer>
