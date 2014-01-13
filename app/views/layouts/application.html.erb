@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>ScholarMama</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <div class="container">
-<div class="page-header">
-<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="jumbotron well">
+    <div class="row clearfix">
+		  <div class="col-md-12 column">
+			 <div class="jumbotron well">
 
 				
-<ul class="nav nav-pills pull-right">
+        <ul class="nav nav-pills pull-right">
 			    <li>
-    <%= link_to "https://www.facebook.com/pages/Scholarmamacom/541347562627998", :target => "_blank" do %>
-      <%= image_tag 'facebook-5.png' %>
-    <% end %>
-</li>
-<li>
-    <%= link_to "http://www.twitter.com/TheScholarMama", :target => "_blank" do %>
-      <%= image_tag 'twitter-5.png' %>
-    <% end %>
-</li>
-<li>
-    <%= link_to "https://www.youtube.com/channel/UCZtXHz4cN1OaNy653dwLFqg", :target => "_blank" do %>
-      <%= image_tag 'youtube-4.png' %>
-    <% end %>
-</li>
-<li>
-    <%= link_to "https://plus.google.com/u/0/104076976256483636178/posts", :target => "_blank" do %>
-      <%= image_tag 'google.png' %>
-    <% end %>
-</li>
-			</ul>
-<h1><%= link_to "ScholarMama", '/'%></h1>
-	  
-
-
-		</div>
-	</div>
-			</div>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+              <%= link_to "https://www.facebook.com/pages/Scholarmamacom/541347562627998", :target => "_blank" do %>
+              <%= image_tag 'facebook-5.png' %>
+            <% end %>
+          </li>
+          <li>
+              <%= link_to "http://www.twitter.com/TheScholarMama", :target => "_blank" do %>
+                <%= image_tag 'twitter-5.png' %>
+              <% end %>
+          </li>
+          <li>
+              <%= link_to "https://www.youtube.com/channel/UCZtXHz4cN1OaNy653dwLFqg", :target => "_blank" do %>
+                <%= image_tag 'youtube-4.png' %>
+              <% end %>
+          </li>
+          <li>
+              <%= link_to "https://plus.google.com/u/0/104076976256483636178/posts", :target => "_blank" do %>
+                <%= image_tag 'google.png' %>
+              <% end %>
+          </li>
+			 </ul>
+        <h1><%= link_to "ScholarMama", '/'%></h1>
+      </div>
+	
 <%= yield %>	
 	</div>
 </div>
@@ -74,6 +88,8 @@
   </ul>
     </div>
       </div>
+      </div>
+      
 </footer>
 </body>
 </html>
